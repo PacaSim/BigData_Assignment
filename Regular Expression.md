@@ -362,3 +362,6 @@ print(ret)
   -> r'(19|20)\d{2}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$'
   - 메일 주소 찾기  
   -> r'\w+[\.\w]*@\w+(\.\w+){1,2}'
+
+
+예제코드 출처 및 공부 자료 : https://www.youtube.com/watch?v=UD9jqWeaRkg&list=PLnp1rUgG4UVbGVR1QPhR-tGGGne2xWAuB
