@@ -84,7 +84,7 @@ def isPassword(pw):
 ```
 
 - 유효성 검사 테스트  
-![result](실행결과1.png)  
+![result](/image/실행결과1.png)  
 * 휴대폰번호 유효성 검사
   *  3개의 그룹 '-'로 구분
   *  첫 번째 그룹 010, 011, 012, 016, 017, 018, 019 중 하나
@@ -102,7 +102,7 @@ def isPhoneNumber(num):
   ```
 
 - 유효성 검사 테스트  
-![result2](실행결과2.png)  
+![result2](/image/실행결과2.png)  
 
 - 휴대폰번호만 추출하기
   - 앞과 규칙은 동일  
@@ -120,7 +120,7 @@ for idx, m in enumerate(r, start=1):
 ```
 
 - 실행결과  
-![result3](실행결과3.png) 
+![result3](/image/실행결과3.png) 
 
 - character
 ```python
