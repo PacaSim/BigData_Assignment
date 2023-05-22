@@ -61,15 +61,15 @@ Mark And Sweep(java, js)
 어플리케이션 실행과 GC 실행이 병행된다.
 
 ### JVM MEMORY 구조  
-![jvmm_emory](jvm_memory.png)  
+![jvmm_emory](/image/jvm_memory.png)  
 모든 쓰레드가 공유하는 area : Method Area, Heap  
 각 쓰레드마다 고유하게 생성하며 쓰레드 종료시 소멸되는 area : Stack, PC Registers, Native Method Stack
 
 ### JVM GC의 Root Space  
-![jvmm_emory](Root_Space.png)
+![jvmm_emory](/image/Root_Space.png)
 
 ### Heap 영역(Object 타입의 데이터들)
-![jvmm_emory](Heap_Area.png)
+![jvmm_emory](/image/Heap_Area.png)
 
 새로운 객체는 eden영역에 생성 -> eden이 다 사용되면 GC 발생 -> 살아남은 객체(Reachable)는 S0으로 옮겨지고 그 외에 객체(Unreachable)는 메모리에서 해제 -> 이 과정이 계속해서 발생해서 S0이 다 사용되면 -> S0에 있던 객체는 S1으로 이동 age 값이 증가 -> S1이 다 사용되면 S1에 있던 객체는 S0으로 이동 age 값이 증가 -> age 값이 특정 수준 이상이 되면 Old Generation으로 영역으로 옮겨진다(Promotion) -> 해당 과정 계속해서 반복
 
@@ -79,10 +79,10 @@ Mark And Sweep(java, js)
  
 __어리석은 실수는 조용히 자라나 괴물이 된다.__  
 - Autoboxing  
-![autoboxing](메모리_예제코드.png)  
+![autoboxing](/image/메모리_예제코드.png)  
 autoboxing으로 인해 sum = sum + l이 모든 반복에서 새 객체를 생성하여 1000개의 객체가 생성된다.  
 -> 가능한 한 primitive data를 사용한다. 위 예제에선 Long 대신 long을 사용  
 - Chache 사용
-![Cache](Cache.png)  
+![Cache](/image/Cache.png)  
 객체의 레퍼런스를 캐시에 넣어 놓고 캐시를 비우는 것을 잊으면 객체가 애플리케이션에서 더 이상 필요하지 않더라도 map이 강한 참조를 보유하고 있어 GC를 할 수 없어 leak 위험이 있다.  
 -> 캐시의 키에 대한 레퍼런스가 캐시 밖에서 필요 없어지면 해당 엔트리를 캐시에서 자동으로 비워주는 WeakHashMap을 쓰는 방법도 있다.
