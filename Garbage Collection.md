@@ -58,7 +58,7 @@ GC가 동작하고 있을 경우, Mark 작업과 애플리케이션 Thread의 �
 
 ### JVM GC의 Root Space  
 ![jvmm_emory](/image/Root_Space.png)  
-
+Mark-and-Sweep방식은 루트에서부터 해당 객체에 접근이 가능한지가 해제의 기준이다.
 
 ### Heap 영역(Object 타입의 데이터들)
 ![jvmm_emory](/image/Heap_Area.png)
