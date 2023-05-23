@@ -139,7 +139,7 @@ public class Stack {
             throw new EmptyStackException();
         }
 
-        return this.elements[--size]; // 주목!!
+        return this.elements[--size]; // leak 위험!
     }
 
     private void ensureCapacity() {
