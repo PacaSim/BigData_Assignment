@@ -168,4 +168,5 @@ pop메서드 부분을 객체를 꺼내준 부분을 null로 설정해서 GC가 
 
 ### 출처 
 [예제코드](https://dzone.com/articles/memory-leak-andjava-code)  
-[참조영상](https://youtu.be/FMUpVA0Vvjw)
+[참조영상](https://youtu.be/FMUpVA0Vvjw)  
+그 외 GC 관련 유튜브 영상 거의 
