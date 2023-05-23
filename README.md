@@ -1,4 +1,4 @@
-# BigData_Assignment
+# BigData_Assignment - 제출완료 -
 
 1. 정규 표현식 (Regular Expression)  
 - 정규 표현식에 대해 조사하고, 본인의 깃허브에 public 프로젝트로 등록하여 정리하시오.  
